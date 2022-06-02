@@ -1,0 +1,20 @@
+<h1>Book Info Update Form</h1>
+<h2><a routerLink="/">Book List</a></h2>
+<div class="container">
+  <form [formGroup]="bookUpdateForm" (ngSubmit)="updateInfo(id)">
+    <input type="hidden" id="id" name="id" formControlName="id">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" formControlName="title">
+    </div>
+    <div class="mb-3">
+      <label for="author" class="form-label">Author</label>
+      <input type="text" class="form-control" id="author" formControlName="author">
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <input type="text" class="form-control" id="description" formControlName="description">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>

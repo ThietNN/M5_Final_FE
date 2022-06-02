@@ -1,0 +1,20 @@
+<h1>Add a new Book</h1>
+<a routerLink="">Book List</a>
+<br>
+<form (ngSubmit)="createNewBook()" [formGroup]="bookCreateForm">
+  <div>
+    <label for="title">Title</label>
+    <input formControlName="title" id="title" type="text">
+  </div>
+  <div>
+    <label for="author">Author</label>
+    <input formControlName="author" id="author" type="text">
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <input formControlName="description" id="description" type="text">
+  </div>
+  <div>
+    <button>Add</button>
+  </div>
+</form>
